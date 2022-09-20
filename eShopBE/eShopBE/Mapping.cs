@@ -10,6 +10,8 @@ namespace eShopBE
         {
             CreateMap<Category, CategoryAddVM>().ReverseMap();
             CreateMap<Category, CategoryUpdateVM>().ReverseMap();
+            CreateMap<CategoryVM, Category>().ReverseMap();
+
 
 
 

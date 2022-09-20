@@ -2,6 +2,8 @@ using eShopBE;
 using eShopBE.Application.Implement;
 using eShopBE.Application.Interface;
 using eShopBE.Data.Context;
+using eShopBE.Data.repository.Implementstions;
+using eShopBE.Data.repository.Interfaces;
 using eShopBE.Data.UoW;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,6 +22,8 @@ builder.Services.AddDbContext<eShopDBContext>(options => options.UseSqlServer(
 //service
 
 builder.Services.AddTransient<ICategoryService, CategoryService>();
+
+
 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 

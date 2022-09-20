@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using eShopBE.Application.Interface;
+using eShopBE.Data.Context;
 using eShopBE.Data.UoW;
 using eShopBE.Entities;
 using eShopBE.Infrastructure.Enum;
@@ -11,16 +12,25 @@ namespace eShopBE.Application.Implement
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
+        private eShopDBContext _eShopDBContext;
 
-        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
+        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper, eShopDBContext eShopDBContext)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _eShopDBContext = eShopDBContext;
         }
 
         public async Task<Response> Add(CategoryAddVM category)
         {
             var data = _mapper.Map<Category>(category);
+           //var data = new Category(){
+           //    CategoryName = category.CategoryName,
+           //    Active = category.Active
+
+           //};
+            //await _eShopDBContext.Set<Category>().AddAsync(data);
+            //await _eShopDBContext.SaveChangesAsync();            
             await _unitOfWork.CategoryGenericRepository.AddAsync(data);
             await _unitOfWork.CommitAsync();
             return new Response(SystemCode.Success, "Add Success", null);
@@ -42,12 +52,13 @@ namespace eShopBE.Application.Implement
         public async Task<Response> GetAll()
         {
             var data = await _unitOfWork.CategoryGenericRepository.GetAllAsync();
-            var listCategoryVm = new List<CategoryVM>();
-            foreach (var item in data)
-            {
-                var dataVm = _mapper.Map<CategoryVM>(item);
-                listCategoryVm.Add(dataVm);
-            }
+            //var listCategoryVm = new List<CategoryVM>();
+            //foreach (var item in data)
+            //{
+            //    var dataVm = _mapper.Map<CategoryVM>(item);
+            //    listCategoryVm.Add(dataVm);
+            //}
+            var listCategoryVm = _mapper.Map<List<CategoryVM>>(data);
             return new Response(SystemCode.Success, "Find Success", listCategoryVm);
 
         }

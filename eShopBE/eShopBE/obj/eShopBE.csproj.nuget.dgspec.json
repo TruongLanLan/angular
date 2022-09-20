@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TEST\\eShopDemo\\eShopBE\\eShopBE\\eShopBE.csproj": {}
+    "D:\\GIT\\angular\\eShopBE\\eShopBE\\eShopBE.csproj": {}
   },
   "projects": {
-    "D:\\TEST\\eShopDemo\\eShopBE\\eShopBE\\eShopBE.csproj": {
+    "D:\\GIT\\angular\\eShopBE\\eShopBE\\eShopBE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TEST\\eShopDemo\\eShopBE\\eShopBE\\eShopBE.csproj",
+        "projectUniqueName": "D:\\GIT\\angular\\eShopBE\\eShopBE\\eShopBE.csproj",
         "projectName": "eShopBE",
-        "projectPath": "D:\\TEST\\eShopDemo\\eShopBE\\eShopBE\\eShopBE.csproj",
-        "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
-        "outputPath": "D:\\TEST\\eShopDemo\\eShopBE\\eShopBE\\obj\\",
+        "projectPath": "D:\\GIT\\angular\\eShopBE\\eShopBE\\eShopBE.csproj",
+        "packagesPath": "C:\\Users\\PCC\\.nuget\\packages\\",
+        "outputPath": "D:\\GIT\\angular\\eShopBE\\eShopBE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PCC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,8 +79,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,5 @@
 ﻿using eShopBE.Data.Context;
+using eShopBE.Data.repository.Implementstions;
 using eShopBE.Data.repository.Interfaces;
 using eShopBE.Entities;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -26,7 +27,14 @@ namespace eShopBE.Data.UoW
         }
         public IGenericRepository<Category> CategoryGenericRepository
         {
-            get { return _categoryRepository; }
+            get 
+            { 
+                if(this._categoryRepository == null)
+                {
+                    this._categoryRepository = new GenericRepository<Category>(_dbContext);
+                }
+                return _categoryRepository; 
+            }
         }
 
         public IGenericRepository<Product> ProductGenericRepository

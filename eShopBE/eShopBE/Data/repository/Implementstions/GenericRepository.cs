@@ -10,9 +10,9 @@ namespace eShopBE.Data.repository.Implementstions
         protected readonly DbSet<T> _dbSet;
         protected readonly eShopDBContext _eShopDbContext;
 
-        public GenericRepository(DbSet<T> dbSet, eShopDBContext eShopDbContext)
+        public GenericRepository(eShopDBContext eShopDbContext)
         {
-            _dbSet = dbSet;
+            _dbSet = eShopDbContext.Set<T>();
             _eShopDbContext = eShopDbContext;
 
         }
