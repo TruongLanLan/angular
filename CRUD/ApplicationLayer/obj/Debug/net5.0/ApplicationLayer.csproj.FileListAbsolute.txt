@@ -1,0 +1,12 @@
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\bin\Debug\net5.0\ApplicationLayer.deps.json
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\bin\Debug\net5.0\ApplicationLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\bin\Debug\net5.0\ref\ApplicationLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\bin\Debug\net5.0\ApplicationLayer.pdb
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.AssemblyInfo.cs
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ref\ApplicationLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\ApplicationLayer\obj\Debug\net5.0\ApplicationLayer.pdb

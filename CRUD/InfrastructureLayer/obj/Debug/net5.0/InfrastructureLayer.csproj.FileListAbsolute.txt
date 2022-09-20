@@ -1,0 +1,12 @@
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\bin\Debug\net5.0\InfrastructureLayer.deps.json
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\bin\Debug\net5.0\InfrastructureLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\bin\Debug\net5.0\ref\InfrastructureLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\bin\Debug\net5.0\InfrastructureLayer.pdb
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.csproj.AssemblyReference.cache
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.AssemblyInfoInputs.cache
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.AssemblyInfo.cs
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.csproj.CoreCompileInputs.cache
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\ref\InfrastructureLayer.dll
+D:\LAN\HOCTAP\NET\CRUD\InfrastructureLayer\obj\Debug\net5.0\InfrastructureLayer.pdb
