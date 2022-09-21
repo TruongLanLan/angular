@@ -12,13 +12,12 @@ namespace eShopBE.Application.Implement
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private eShopDBContext _eShopDBContext;
+       // private eShopDBContext _eShopDBContext;
 
-        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper, eShopDBContext eShopDBContext)
+        public CategoryService(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _eShopDBContext = eShopDBContext;
         }
 
         public async Task<Response> Add(CategoryAddVM category)

@@ -17,13 +17,16 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<eShopDBContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DbConnection")));
+//
 
-
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<IUserRepository, UserRepository>();
 //service
 
 builder.Services.AddTransient<ICategoryService, CategoryService>();
-
-
+builder.Services.AddTransient<ISupplierService, SupplierService>();
+builder.Services.AddTransient<IProductService, ProductService>();
+builder.Services.AddTransient<IUserService, UserService>();
 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 

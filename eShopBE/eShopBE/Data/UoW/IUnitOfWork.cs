@@ -15,7 +15,7 @@ namespace eShopBE.Data.UoW
         IGenericRepository<Supplier> SupplierGenericRepository { get; }
         IGenericRepository<Order> OrderGenericRepository { get; }
         IGenericRepository<OrderDetail> OrderDetailGenericRepository { get; }
-        IGenericRepository <Picture> PictureOrderDetailGenericRepository { get; }
+        IGenericRepository <Picture> PictureGenericRepository { get; }
 
         Task<int> CommitAsync();
         int SaveChange();

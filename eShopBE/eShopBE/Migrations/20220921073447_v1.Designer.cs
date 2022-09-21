@@ -12,8 +12,8 @@ using eShopBE.Data.Context;
 namespace eShopBE.Migrations
 {
     [DbContext(typeof(eShopDBContext))]
-    [Migration("20220920140204_dbv1")]
-    partial class dbv1
+    [Migration("20220921073447_v1")]
+    partial class v1
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

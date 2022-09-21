@@ -39,7 +39,14 @@ namespace eShopBE.Data.UoW
 
         public IGenericRepository<Product> ProductGenericRepository
         {
-            get { return _productRepository; }
+            get 
+            { 
+                if(this._productRepository == null)
+                {
+                    this._productRepository = new GenericRepository<Product>(_dbContext);
+                }
+                return _productRepository; 
+            }
         }
 
         public IGenericRepository<Comment> CommentGenericRepository
@@ -59,12 +66,26 @@ namespace eShopBE.Data.UoW
 
         public IGenericRepository<User> UserGenericRepository
         {
-            get { return _userRepository; }
+            get 
+            { 
+                if(this._userRepository == null)
+                {
+                    this._userRepository = new GenericRepository<User>(_dbContext);
+                }
+                return _userRepository; 
+            }
         }
 
         public IGenericRepository<Supplier> SupplierGenericRepository
         {
-            get { return _supplierRepository; }
+            get 
+
+            {   if(this._supplierRepository == null)
+                {
+                    this._supplierRepository = new GenericRepository<Supplier>(_dbContext);
+                }
+                return _supplierRepository; 
+            }
         }
 
         public IGenericRepository<Order> OrderGenericRepository
@@ -77,9 +98,16 @@ namespace eShopBE.Data.UoW
             get { return _orderDetailRepository; }
         }
 
-        public IGenericRepository<Picture> PictureOrderDetailGenericRepository
+        public IGenericRepository<Picture> PictureGenericRepository
         {
-            get { return _pictureRepository; }
+            get 
+            { 
+                if(this._pictureRepository == null)
+                {
+                    this._pictureRepository = new GenericRepository<Picture>(_dbContext);
+                }
+                return _pictureRepository; 
+            }
         }
         public Task<IDbContextTransaction> BeginTransactionAsync()
         {
