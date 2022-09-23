@@ -1,0 +1,13 @@
+.page-container .main-content {
+    padding: calc(70px + 25px) 25px 25px;
+    min-height: calc(100vh - 175px) !important;
+    padding: 25px
+}
+
+.page-container {
+    min-height: calc(100vh - 175px) !important;
+}
+
+.footer {
+    padding: 33px 0 0 0 !important;
+}

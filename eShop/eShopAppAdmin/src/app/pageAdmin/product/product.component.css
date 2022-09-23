@@ -1,0 +1,4 @@
+input[type=text] {
+    border: 1px solid rgb(46, 30, 30);
+    border-radius: 4px;
+  }

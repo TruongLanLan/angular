@@ -1,0 +1,76 @@
+<div class="main-content">
+    <div class="page-header">
+        <div class="header-sub-title">
+            <nav class="breadcrumb breadcrumb-dash">
+                <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Trang chủ</a>
+                <span class="breadcrumb-item active">Danh sách sản phẩm</span>
+            </nav>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <div class="row m-b-30">
+                <div class="col-lg-4">
+                    <div class="input-affix m-v-10">
+                        <i style="color: rgb(171, 18, 18);" class="prefix-icon anticon anticon-search opacity-04"></i>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" />
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 text-right">
+                    <a [routerLink]="['/admin/product/create']" routerLinkActive="router-link-active"
+                        class="btn btn-primary" style="color: white">
+                        <i class="anticon anticon-plus-circle m-r-5"></i>
+                        <span>Thêm sản phẩm</span>
+                    </a>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-hover e-commerce-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Sản phẩm</th>
+                            <th>Giá bán</th>
+                            <th>Giá nhập</th>
+                            <th>Danh mục</th>
+                            <th class="text-center">Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid rounded"
+                                        style="max-width: 60px" alt=" " />
+                                    <h5 class="m-b-0 m-l-10">dd</h5>
+                                </div>
+                            </td>
+                            <td>1213</td>
+                            <td>1111</td>
+                            <td>dfs</td>
+
+                            <td class="text-center">
+                                <a class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                    <i class="anticon anticon-info-circle"></i>
+                                </a>
+                                <a class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                    <i class="anticon anticon-edit"></i>
+                                </a>
+                                <a class="btn btn-icon btn-hover btn-sm btn-rounded">
+                                    <i class="anticon anticon-delete"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- pagging 
+    <div class="col-sm-12 col-md-7">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+    -->
+</div>
