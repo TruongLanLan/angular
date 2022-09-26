@@ -7,7 +7,7 @@ namespace eShopAPI.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    public class CategoryController : Controller
+    public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
         public CategoryController(ICategoryService categoryService)

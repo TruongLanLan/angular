@@ -19,6 +19,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<eShopDBContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DbConnection")));
 
+
 //Repo
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
@@ -40,9 +41,30 @@ builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(Mapping));
 
 
+
+// connect angular
+//builder.Services.AddCors();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(
+        name: "AllowOrigin",
+        builder =>
+        {
+            builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        }
+    );
+});
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+
+//app.UseCors(options => options.WithOrigins("http://localhost:4200/").AllowAnyMethod().AllowAnyHeader());
+
+app.UseCors("AllowOrigin");
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

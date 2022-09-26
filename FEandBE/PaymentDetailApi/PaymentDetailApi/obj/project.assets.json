@@ -10069,11 +10069,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\TEST\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\PaymentDetailApi.csproj",
+      "projectUniqueName": "D:\\FE\\Git\\angular\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\PaymentDetailApi.csproj",
       "projectName": "PaymentDetailApi",
-      "projectPath": "D:\\TEST\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\PaymentDetailApi.csproj",
+      "projectPath": "D:\\FE\\Git\\angular\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\PaymentDetailApi.csproj",
       "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
-      "outputPath": "D:\\TEST\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\obj\\",
+      "outputPath": "D:\\FE\\Git\\angular\\FEandBE\\PaymentDetailApi\\PaymentDetailApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
