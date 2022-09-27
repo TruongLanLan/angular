@@ -69,7 +69,8 @@ namespace eShopAPI.Service.Implement
             {
                 return new Response(SystemCode.Error, "Not found category", null);
             }
-            return new Response(SystemCode.Success, "Find Success", data);
+
+            return new Response(SystemCode.Success, "Find Success", _mapper.Map<CategoryVM>(data));
         }
 
         public async Task<Response> Update(CategoryUpdateVM category)
@@ -79,10 +80,12 @@ namespace eShopAPI.Service.Implement
             {
                 return new Response(SystemCode.Error, "Not found category", null);
             }
-            var dataCategory = _mapper.Map<Category>(category);
-            _unitOfWork.CategoryGenericRepository.Update(dataCategory);
+            //   data = _mapper.Map<Category>(ả);
+            data.CategoryName = category.CategoryName;
+            data.Active = category.Active;
+            _unitOfWork.CategoryGenericRepository.Update(data);
             await _unitOfWork.CommitAsync();
-            return new Response(SystemCode.Success, "Update success", dataCategory);
+            return new Response(SystemCode.Success, "Update success", data);
         }   
     }
 }

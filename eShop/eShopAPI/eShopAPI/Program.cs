@@ -21,20 +21,20 @@ builder.Services.AddDbContext<eShopDBContext>(options => options.UseSqlServer(
 
 
 //Repo
-builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 //service
 
-builder.Services.AddTransient<ICategoryService, CategoryService>();
-builder.Services.AddTransient<ISupplierService, SupplierService>();
-builder.Services.AddTransient<IProductService, ProductService>();
-builder.Services.AddTransient<ISaleCodeService, SaleCodeService>();
-builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ISupplierService, SupplierService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ISaleCodeService, SaleCodeService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 //UnitOfWork
 
 
-builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 //mapper

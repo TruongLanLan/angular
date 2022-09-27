@@ -66,7 +66,8 @@ namespace eShopAPI.Service.Implement
         public async Task<Response> GetAll()
         {
             var data = await _productRepository.GetAllProduct();
-            return new Response(SystemCode.Success, "get success", data);
+            var listdata = _mapper.Map<List<ProductVM>>(data);
+            return new Response(SystemCode.Success, "get success", listdata);
         }
 
         public Task<Response> GetAllProductAdmin()

@@ -18,7 +18,7 @@ namespace eShopAPI.DataAccess.Implemention
                 .Include(c => c.Pictures)
                 .Where(c => c.IsDeleted == false)
                 .OrderByDescending(c => c.Id)
-                .Include(c => c.SupplierId)
+                .Include(c => c.Supplier)
                 .Include(c => c.Category)
                 .ToListAsync();
         }

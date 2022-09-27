@@ -12,6 +12,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { CategoryAddComponent } from './pageAdmin/category/category-add/category-add.component';
 import { CategoryEditComponent } from './pageAdmin/category/category-edit/category-edit.component';
 import { ToastrModule } from 'ngx-toastr';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { SupplierComponent } from './pageAdmin/supplier/supplier.component';
+import { SupplierAddComponent } from './pageAdmin/supplier/supplier-add/supplier-add.component';
+import { SupplierEditComponent } from './pageAdmin/supplier/supplier-edit/supplier-edit.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,10 @@ import { ToastrModule } from 'ngx-toastr';
     ProductComponent,
     CategoryComponent,
     CategoryAddComponent,
-    CategoryEditComponent
+    CategoryEditComponent,
+    SupplierComponent,
+    SupplierAddComponent,
+    SupplierEditComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +37,7 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
+    NgxPaginationModule,
     ToastrModule.forRoot()
     
   ],

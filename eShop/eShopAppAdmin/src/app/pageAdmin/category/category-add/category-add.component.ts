@@ -26,7 +26,7 @@ export class CategoryAddComponent implements OnInit {
   });
 
   saveAdd(){
-    if(this.addForm.value.categoryName == null)
+    if(this.addForm.value.categoryName == '')
     {
       this.toastr.warning('Category name not null', 'Note');
     }

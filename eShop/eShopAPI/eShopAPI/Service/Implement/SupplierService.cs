@@ -59,7 +59,10 @@ namespace eShopAPI.Service.Implement
             {
                 return new Response(SystemCode.Error, "Not found supplier", null);
             }
-            _unitOfWork.SupplierGenericRepository.Update(_mapper.Map<Supplier>(data));
+            data.CompanyName = supplier.CompanyName;
+            data.Address = supplier.Address;
+            data.Phone = supplier.Phone;
+            _unitOfWork.SupplierGenericRepository.Update(data);
             await _unitOfWork.CommitAsync();
             return new Response(SystemCode.Success, "Update success", _mapper.Map<Supplier>(data));
         }

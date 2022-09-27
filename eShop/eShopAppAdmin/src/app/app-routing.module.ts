@@ -6,6 +6,8 @@ import { CategoryEditComponent } from './pageAdmin/category/category-edit/catego
 import { CategoryComponent } from './pageAdmin/category/category.component';
 import { DashboardComponent } from './pageAdmin/dashboard/dashboard.component';
 import { ProductComponent } from './pageAdmin/product/product.component';
+import { SupplierAddComponent } from './pageAdmin/supplier/supplier-add/supplier-add.component';
+import { SupplierComponent } from './pageAdmin/supplier/supplier.component';
 
 const routes: Routes = [
   {
@@ -17,8 +19,11 @@ const routes: Routes = [
       {path: 'category', children: [
         {path:'', component:CategoryComponent},
         {path:'addnew', component: CategoryAddComponent},
-        {path:'edit/:id', component:CategoryEditComponent},
-        {path:'delete/:id', component:CategoryComponent}
+        {path:'edit/:id', component:CategoryEditComponent}
+      ]},
+      {path:'supplier', children: [
+        {path:'', component:SupplierComponent},
+        {path:'addnew', component:SupplierAddComponent}
       ]}
     ]
   }

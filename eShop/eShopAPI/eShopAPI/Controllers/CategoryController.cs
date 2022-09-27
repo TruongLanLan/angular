@@ -21,7 +21,7 @@ namespace eShopAPI.Controllers
             var result = await _categoryService.GetAll();
             return Ok(result);
         }
-        [HttpGet("{id}")]
+        [HttpGet]
         public async Task<IActionResult> GetByIdCategory(int id)
         {
             var result = await _categoryService.GetById(id);

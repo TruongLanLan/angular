@@ -12,8 +12,8 @@ export class CategoryService {
     constructor(private http: HttpClient) {}
 
     readonly baseURL = 'http://localhost:5288/api/Category'
-
-
+    
+    
     getList(): Observable<HttpResponse<any>>{
        // this.http.get(this.baseURL+'/GetAllCategory')
        // .toPromise()
@@ -27,5 +27,11 @@ export class CategoryService {
     }
     deleteCategory(id: any) : Observable<HttpResponse<any>>{
         return this.http.delete(this.baseURL + `/DeleteCategory?id=${id}`, {observe: 'response'});
+    }
+    findByIdCategory(id: any) : Observable<HttpResponse<any>>{
+        return this.http.get<any>(this.baseURL + `/GetByIdCategory?id=${id}`, {observe:'response'});
+    }
+    updateCategory(body: any): Observable<HttpResponse<any>> {
+        return this.http.post(this.baseURL + `/UpdateCategory`, body, {observe: 'response'});
     }
 }

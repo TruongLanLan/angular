@@ -3,7 +3,7 @@
         <div class="header-sub-title">
             <nav class="breadcrumb breadcrumb-dash">
                 <a href="#" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Trang chủ</a>
-                <span class="breadcrumb-item active">Danh mục sản phẩm</span>
+                <span class="breadcrumb-item active">Nhà cung cấp</span>
             </nav>
         </div>
     </div>
@@ -18,38 +18,40 @@
                 </div>
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4 text-right">
-                    <a [routerLink]="['/admin/category/addnew']" routerLinkActive="router-link-active"
+                    <a [routerLink]="['/admin/supplier/addnew']" routerLinkActive="router-link-active"
                         class="btn btn-primary" style="color: white">
                         <i class="anticon anticon-plus-circle m-r-5"></i>
-                        <span>Thêm danh mục</span>
+                        <span>Thêm nhà cung cấp</span>
                     </a>
                 </div>
             </div>
-            <form #resetForm = "ngForm">
+            <form>
                 <div class="table-responsive">
                     <table class="table table-hover e-commerce-table">
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Tên danh mục</th>
-                                <th>Active</th>
-                                <th class="text-center">Hành động</th>
+                                <th>Company Name</th>
+                                <th>Address</th>
+                                <th>Phone</th>
+                                <th class="text-center">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr *ngFor="let item of listCategory">
+                            <tr *ngFor="let item of listSupplier">
                                 <td>{{item.id}}</td>
-                                <td>{{item.categoryName}}</td>
-                                <td>{{item.active}}</td>
+                                <td>{{item.companyName}}</td>
+                                <td>{{item.address}}</td>
+                                <td>{{item.phone}}</td>
     
                                 <td class="text-center">
                                     <a class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
                                         <i class="anticon anticon-info-circle"></i>
                                     </a>
-                                    <a [routerLink]="['/admin/category/edit',item.id]" routerLinkActive="router-link-active" class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
+                                    <a [routerLink]="['/admin/supplier/edit',item.id]" routerLinkActive="router-link-active" class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
                                         <i class="anticon anticon-edit"></i>
                                     </a>
-                                    <a (click)="deleteCategory(item.id)" class="btn btn-icon btn-hover btn-sm btn-rounded">
+                                    <a (click)="deleteSupplier(item.id)" class="btn btn-icon btn-hover btn-sm btn-rounded">
                                         <i class="anticon anticon-delete"></i>
                                     </a>
                                 </td>

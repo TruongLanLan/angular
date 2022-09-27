@@ -1,5 +1,5 @@
 <div class="main-content">
-    <form [formGroup]="addForm">
+    <form>
       <div class="page-header no-gutters has-tab">
         <div class="d-md-flex m-b-15 align-items-center justify-content-between">
           <div class="media align-items-center m-b-15">
@@ -13,11 +13,6 @@
             </button>
           </div>
         </div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Thông tin cơ bản</a>
-          </li>
-        </ul>
       </div>
       <div class="tab-content m-t-15">
         <div class="tab-pane fade show active" id="product-edit-basic">
@@ -30,10 +25,20 @@
                     value="Skinny Men Blazer" />
                 </div> -->
                 <div class="form-group">
-                  <label class="font-weight-semibold" for="categoryName">Tên danh mục</label>
-                  <input formControlName="categoryName" type="text" class="form-control" id="categoryName"
-                    placeholder="danh mục" />
+                  <label class="font-weight-semibold" for="companyName">Tên nhà cung cấp</label>
+                  <input formControlName="companyName" type="text" class="form-control" id="companyName"
+                    placeholder="nhà cung cấp" />
                 </div>
+                <div class="form-group">
+                    <label class="font-weight-semibold" for="address">Địa chỉ</label>
+                    <input formControlName="address" type="text" class="form-control" id="address"
+                      placeholder="địa chỉ" />
+                  </div>
+                  <div class="form-group">
+                    <label class="font-weight-semibold" for="phone">Số điện thoại</label>
+                    <input formControlName="phone" type="text" class="form-control" id="phone"
+                      placeholder="Số điện thoại" />
+                  </div>
               </form>
             </div>
           </div>
