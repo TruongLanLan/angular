@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4 text-right">
-                    <a [routerLink]="['/admin/product/create']" routerLinkActive="router-link-active"
+                    <a [routerLink]="['/admin/product/addnew']" routerLinkActive="router-link-active"
                         class="btn btn-primary" style="color: white">
                         <i class="anticon anticon-plus-circle m-r-5"></i>
                         <span>Thêm sản phẩm</span>
@@ -38,18 +38,20 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>1</td>
+                        <tr *ngFor="let item of listProduct">
+                            <td>{{item.id}}</td>
                             <td>
                                 <div class="d-flex align-items-center">
-                                    <img class="img-fluid rounded"
+                                    <div *ngFor="let img of item.pictures">
+                                    <img class="img-fluid rounded" [src]="img.image | pipeImage"
                                         style="max-width: 60px" alt=" " />
-                                    <h5 class="m-b-0 m-l-10">dd</h5>
+                                    </div>
+                                    <h5 class="m-b-0 m-l-10">{{item.name}}</h5>
                                 </div>
                             </td>
-                            <td>1213</td>
-                            <td>1111</td>
-                            <td>dfs</td>
+                            <td>{{item.price}}</td>
+                            <td>{{item.priceInput}}</td>
+                            <td>{{item.categoryName}}</td>
 
                             <td class="text-center">
                                 <a class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
@@ -58,7 +60,7 @@
                                 <a class="btn btn-icon btn-hover btn-sm btn-rounded pull-right">
                                     <i class="anticon anticon-edit"></i>
                                 </a>
-                                <a class="btn btn-icon btn-hover btn-sm btn-rounded">
+                                <a (click)="deleteProduct(item.id)" class="btn btn-icon btn-hover btn-sm btn-rounded">
                                     <i class="anticon anticon-delete"></i>
                                 </a>
                             </td>

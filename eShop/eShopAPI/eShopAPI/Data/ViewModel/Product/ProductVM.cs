@@ -1,4 +1,7 @@
-﻿using eShopAPI.Data.ViewModel.Picture;
+﻿using eShopAPI.Data.Entities;
+using eShopAPI.Data.ViewModel.Category;
+using eShopAPI.Data.ViewModel.Picture;
+using eShopAPI.Data.ViewModel.Supplier;
 
 namespace eShopAPI.Data.ViewModel.Product
 {
@@ -21,6 +24,8 @@ namespace eShopAPI.Data.ViewModel.Product
         public int CategoryId { get; set; }
         public int SupplierId { get; set; }
         public int CoutSaleProduct { get; set; }
+        public CategoryVM Category { get; set; }
+        public SupplierVM Supplier { get; set; }
         public IEnumerable<PictureVM> Pictures { get; set; }
     }
 }

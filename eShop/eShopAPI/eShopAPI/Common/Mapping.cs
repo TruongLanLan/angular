@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using eShopAPI.Data.Entities;
 using eShopAPI.Data.ViewModel.Category;
+using eShopAPI.Data.ViewModel.Picture;
 using eShopAPI.Data.ViewModel.Product;
 using eShopAPI.Data.ViewModel.SaleCode;
 using eShopAPI.Data.ViewModel.Supplier;
@@ -30,6 +31,10 @@ namespace eShopAPI.Common
 
             CreateMap<SaleCode, SaleCodeAddVM>().ReverseMap();
             CreateMap<SaleCode, SaleCodeUpdateVM>().ReverseMap();
+
+            CreateMap<Picture, PictureAddVM>().ReverseMap();
+            CreateMap<Picture, PictureUpdateVM>().ReverseMap();
+            CreateMap<PictureVM, Picture>().ReverseMap();
         }
     }
 }

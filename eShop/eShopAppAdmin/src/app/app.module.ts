@@ -17,6 +17,10 @@ import { NgxPaginationModule } from 'ngx-pagination';
 import { SupplierComponent } from './pageAdmin/supplier/supplier.component';
 import { SupplierAddComponent } from './pageAdmin/supplier/supplier-add/supplier-add.component';
 import { SupplierEditComponent } from './pageAdmin/supplier/supplier-edit/supplier-edit.component';
+import { ProductAddComponent } from './pageAdmin/product/product-add/product-add.component';
+
+import { CKEditorModule } from 'ckeditor4-angular';
+import { PipeImage } from './pageAdmin/common/convert.pipeline';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { SupplierEditComponent } from './pageAdmin/supplier/supplier-edit/suppli
     CategoryEditComponent,
     SupplierComponent,
     SupplierAddComponent,
-    SupplierEditComponent
+    SupplierEditComponent,
+    ProductAddComponent,
+    PipeImage
   ],
   imports: [
     BrowserModule,
@@ -38,6 +44,7 @@ import { SupplierEditComponent } from './pageAdmin/supplier/supplier-edit/suppli
     HttpClientModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+    CKEditorModule,
     ToastrModule.forRoot()
     
   ],

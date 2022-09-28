@@ -1,0 +1,181 @@
+<div class="main-content">
+    <form>
+      <div class="page-header no-gutters has-tab">
+        <div class="d-md-flex m-b-15 align-items-center justify-content-between">
+          <div class="media align-items-center m-b-15">
+           
+           
+          </div>
+          <div class="m-b-15">
+            <button (click)="saveAdd()" class="btn btn-primary">
+              <i class="anticon anticon-save"></i>
+              <span>Lưu</span>
+            </button>
+          </div>
+        </div>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Thông tin cơ bản</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#product-edit-option">Thông tin thêm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#product-edit-description">Nội dung</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+          <div class="card">
+            <div class="card-body">
+              <form [formGroup]="formData">
+                <!-- <div class="form-group" hidden>
+                  <label class="font-weight-semibold" for="productName">Product Name</label>
+                  <input formControlName="id" type="text" class="form-control" id="productName" placeholder="Product Name"
+                    value="Skinny Men Blazer" />
+                </div> -->
+                <div class="form-group">
+                  <label class="font-weight-semibold" for="productName">Sản phẩm</label>
+                  <input formControlName="name" type="text" class="form-control" id="productName"
+                    placeholder="Sản phẩm"  />
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="productPrice">Giá bán</label>
+                    <input formControlName="price" type="number" class="form-control" id="productPrice" placeholder="Giá bán"
+                       />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="productPriceInput">Giá nhập</label>
+                    <input formControlName="priceInput" type="number" class="form-control" id="productPriceInput"
+                      placeholder="Giá nhập" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="sale">Giảm giá</label>
+                    <input formControlName="sale" type="number" class="form-control" id="sale" placeholder="Sale"
+                      value="" />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="inventory">Số lượng</label>
+                    <input formControlName="inventory" type="text" class="form-control" id="inventory"
+                      placeholder="Số lượng" value="" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="insurance">Bảo hành (Tháng)</label>
+                    <input formControlName="insurance" type="text" class="form-control" id="insurance"
+                      placeholder="Bảo hành" value="" />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="accessory">Phụ kiện</label>
+                    <input formControlName="accessory" type="text" class="form-control" id="accessory"
+                      placeholder="Phụ kiện" value="" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="sensor">Cảm biến</label>
+                    <input formControlName="sensor" type="text" class="form-control" id="sensor"
+                      placeholder="Cảm biến" value="" />
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="imageProcessor">Bộ xử lý ảnh</label>
+                    <input formControlName="imageProcessor" type="text" class="form-control" id="imageProcessor"
+                      placeholder="Bộ xử lý ảnh" value="" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-4">
+                    <label class="font-weight-semibold" for="screen">Màn hình (inh)</label>
+                    <input formControlName="screen" type="text" class="form-control" id="screen"
+                      placeholder="Màn hình" value="" />
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label class="font-weight-semibold" for="iso">Iso</label>
+                    <input formControlName="iso" type="text" class="form-control" id="iso" placeholder="Iso"
+                      value="" />
+                  </div>
+                  <div class="form-group col-sm-4">
+                    <label class="font-weight-semibold" for="shutterSpeed">Tốc độ màn chụp</label>
+                    <input formControlName="shutterSpeed" type="text" class="form-control" id="shutterSpeed"
+                      placeholder="Tốc độ màn chụp" value="" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="productCategory">Danh mục</label>
+                    <select class="custom-select" id="productCategory" formControlName="categoryId">
+                      <option value="">Chọn Danh mục</option>
+                      <option *ngFor="let category of listCate" [ngValue]="category.id">
+                        {{ category.categoryName }}
+                      </option>
+                    </select>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="font-weight-semibold" for="productCategory">Nhà sản xuất</label>
+                    <select class="custom-select" id="productCategory" formControlName="supplierId">
+                      <option value="">Chọn nhà sản xuất</option>
+                      <option *ngFor="let supplier of listSupli" [ngValue]="supplier.id">
+                        {{ supplier.companyName }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="product-edit-option">
+          <div class="card">
+            <div class="card-body">
+              <form [formGroup]="formImages">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label for="file">File</label>
+  
+                    <input formControlName="file" id="file" type="file" class="form-control" multiple=""
+                      (change)="onFileChange($event)" />
+  
+                    <div *ngIf="f['file'].touched && f['file'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['file'].errors && f['file'].errors['required']">
+                        File is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="card" *ngFor="let url of imageList; let i = index"
+                      style="width: 33.33%; margin-left: 3px">
+                      <div class="card-header d-flex" style="align-items: center">
+                        <button type="button" class="close" style="margin-left: auto; width: 15px; height: 15px"
+                          (click)="handleDeleteImage(i)">
+                          <i class="anticon anticon-close"></i>
+                        </button>
+                      </div>
+                      <div class="card-body">
+                        <img [src]="url.image" style="object-fit: cover; width: 100%" />
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="product-edit-description">
+          <div class="card">
+            <div class="card-body">
+              <ckeditor #editor (change)="onChange($event)" formControlName="description" [config]="{ extraPlugins: 'divarea' } ">
+              </ckeditor>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  
