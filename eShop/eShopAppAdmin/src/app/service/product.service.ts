@@ -17,7 +17,9 @@ export class ProductService{
     }
 
     addProduct(body: any) : Observable<HttpResponse<any>>{
-        return this.http.post(this.baseUrl +`/AddProduct`, body, {observe: 'response'});
+        var hhh = this.baseUrl+'/AddProduct';
+        console.log("hhhhhhh",hhh)
+        return this.http.post(this.baseUrl +'/AddProduct', body, {observe: 'response'});
     }
     deleteProduct(id: any) : Observable<HttpResponse<any>>{
         return this.http.delete(this.baseUrl + `/DeteleProduct?Id=${id}`, {observe: 'response'});

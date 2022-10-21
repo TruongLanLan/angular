@@ -58,11 +58,13 @@ export class ProductAddComponent implements OnInit {
     fileSource: new FormControl ('',Validators.required)
   })
   saveAdd(){
+    //debugger;
     let body = {
       ...this.formData.value,
       description: this.editDescription,
       pictures: this.imageList
     };
+    //console.log('productsss',body)
     this.service.addProduct(body);
     this.route.navigateByUrl('/admin/product');
   }
