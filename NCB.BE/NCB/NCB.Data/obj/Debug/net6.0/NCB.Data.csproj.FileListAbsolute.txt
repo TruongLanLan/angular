@@ -1,0 +1,14 @@
+D:\FE\NCB.BE\NCB\NCB.Data\bin\Debug\net6.0\NCB.Data.deps.json
+D:\FE\NCB.BE\NCB\NCB.Data\bin\Debug\net6.0\NCB.Data.dll
+D:\FE\NCB.BE\NCB\NCB.Data\bin\Debug\net6.0\NCB.Data.pdb
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.csproj.AssemblyReference.cache
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.AssemblyInfoInputs.cache
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.AssemblyInfo.cs
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.csproj.CoreCompileInputs.cache
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.dll
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\refint\NCB.Data.dll
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.pdb
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\ref\NCB.Data.dll
+D:\FE\NCB.BE\NCB\NCB.Data\bin\Debug\net6.0\NCB.Data.runtimeconfig.json
+D:\FE\NCB.BE\NCB\NCB.Data\obj\Debug\net6.0\NCB.Data.genruntimeconfig.cache

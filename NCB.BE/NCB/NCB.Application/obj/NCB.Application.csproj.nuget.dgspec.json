@@ -1,0 +1,305 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FE\\NCB.BE\\NCB\\NCB.Application\\NCB.Application.csproj": {}
+  },
+  "projects": {
+    "D:\\FE\\NCB.BE\\NCB\\NCB.Application\\NCB.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FE\\NCB.BE\\NCB\\NCB.Application\\NCB.Application.csproj",
+        "projectName": "NCB.Application",
+        "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Application\\NCB.Application.csproj",
+        "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
+        "outputPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj"
+              },
+              "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\NCB.DataAccess.EF.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\NCB.DataAccess.EF.csproj"
+              },
+              "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj",
+        "projectName": "NCB.Common",
+        "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj",
+        "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
+        "outputPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\NCB.DataAccess.EF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\NCB.DataAccess.EF.csproj",
+        "projectName": "NCB.DataAccess.EF",
+        "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\NCB.DataAccess.EF.csproj",
+        "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
+        "outputPath": "D:\\FE\\NCB.BE\\NCB\\NCB.DataAccess.EF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Common\\NCB.Common.csproj"
+              },
+              "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj": {
+                "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj",
+        "projectName": "NCB.Data",
+        "projectPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\NCB.Data.csproj",
+        "packagesPath": "C:\\Users\\ttlan2\\.nuget\\packages\\",
+        "outputPath": "D:\\FE\\NCB.BE\\NCB\\NCB.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ttlan2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
